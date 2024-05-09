@@ -14,7 +14,7 @@ const scheme = z.object({
   email: z
     .string({ required_error: "Enter email" })
     .email({ message: "Email введен некорректно" }),
-  password: z.string().min(8, "пароль должен содрежать мнимум 8 символ"),
+  password: z.string().min(8, "пароль должен содрежать мнимум 8 символов"),
 });
 
 const SecondScr = () => {
